@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h2>@ViewData["Title"] - @ViewData["dicksTitle"]</h2>
+
+<ul>
+    @for (int i = 0; i < (int)ViewData["NumTimes"]; i++)
+    {
+        int di = i + 1;
+        <li>@ViewData["Message"], occurance is @di</li>
+    }
+</ul>
